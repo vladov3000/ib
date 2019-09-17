@@ -1,4 +1,5 @@
 # Traffic Simulator
 This is a program made using the Python3 library pygame to visualize the effects of different configurations of roads and intersections on congestion. To use the program, pygame needs to be installed by running '''pip3 install pygame''' in the terminal. Once you have ran the script, a white window will appear on your screen, and you can begin creating your intersections. Click anywhere in the window to create a blue intersection point there, and right click on it to delete it. Once you are satisfied with your intersections, you can select an intersection by clicking on it, turning it green, and shift-clicking on another intersection to create a road between the two points. To create curved paths, create multiple intersection points and connect each of them together. Press 1 to start the simulation and observe where the cars get stuck in traffic.
 
-Explanation of Code
+# Explanation of Code
+The main while loop (see line 735) has two functions: detecting inputs and rendering objects. Each rendered object has a class, array containing all objects of the same class, and a render function. The following are all the objects that can be rendered: Roads, Vertices (intersections), Cars, Static Text, and Warning Messages.
